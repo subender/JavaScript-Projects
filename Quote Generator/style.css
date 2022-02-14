@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  font-family: "Special Elite", cursive;
+  background: #fffdf5;
+  color: #3f3f5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  position: relative;
+  font-size: 2rem;
+  max-width: 600px;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1.4;
+  border: 2px solid #ff69b4;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.quote:before,
+.quote:after {
+  position: absolute;
+  color: #eedf9c;
+  height: 4rem;
+  width: 4rem;
+  font-size: 8rem;
+}
+
+.quote:before {
+  content: "“";
+  left: -5rem;
+  top: -2rem;
+}
+
+.quote:after {
+  content: "”";
+  bottom: 1rem;
+  right: -5rem;
+}
+
+.author {
+  line-height: 3;
+  text-align: left;
+  margin-bottom: 6rem;
+}
+
+.btn {
+  background-color: #ffc0cb;
+  border: 1px solid #e6adb7;
+  padding: 1.2rem 2.2rem;
+  font-size: 1rem;
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 0px 0px #ffc6d0, 10px 10px 0px 0px #ffcdd5,
+    15px 15px 0px 0px #ffd3db, 20px 20px 0px 0px #ffe0e5,
+    25px 25px 0px 0px #ffecef, 5px 5px 15px 5px #ff45e300;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-12px);
+  box-shadow: 10px 10px 0px 0px #ffc6d0, 20px 20px 0px 0px #ffcdd5,
+    30px 30px 0px 0px #ffd3db, 40px 40px 0px 0px #ffe0e5,
+    50px 50px 0px 0px #ffecef, 5px 5px 15px 5px rgba(255, 69, 227, 0);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 1px 1px 0px 0px #ffc6d0, 2px 2px 0px 0px #ffcdd5,
+    3px 3px 0px 0px #ffd3db, 4px 4px 0px 0px #ffe0e5, 5px 5px 0px 0px #ffecef,
+    5px 5px 15px 5px #ff45e300;
+}
